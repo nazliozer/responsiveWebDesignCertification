@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 35px;
+    text-align: center;
+}
+ul{
+    max-width: 550px;
+    margin: 25px auto 50px auto;
+    text-align: left;
+}
+li{
+    margin: 14px 0;
+}
+a:visited{
+    color:#be207c;
+}
+a{
+    color:#35a8c5;
+}
+a:hover{
+    font-size: 120%;
+}
