@@ -1,0 +1,85 @@
+html{
+    min-width: 290px;
+    color: #4d4e53;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+#main-doc{
+    margin-left: 310px;
+    position: absolute;
+    padding: 20px;
+}
+#main-doc header{
+    color: black;
+    text-align: left;
+}
+header{
+    font-size: 27px;
+    text-align: center;
+    margin: 10px;
+}
+article{
+    margin: 15px;
+    font-size: 15px;
+}
+li{
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 100%;
+}
+section{
+    display: block;
+}
+code{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    background-color:#f7f7f7 ;
+    padding: 15px;
+    border-radius: 5px;
+    word-break: normal;
+    word-wrap: normal;
+    
+}
+/* navbar */
+#navbar{
+    position: fixed;
+    min-width: 290px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    left: 0px;
+}
+#navbar ul{
+    padding:0 ;
+    overflow-x: hidden;
+    overflow-y: auto ;
+}
+#navbar li{
+    color: #4d4e53;
+    list-style: none;
+    border-top: 1px solid;
+    margin-left: 0;
+    width: 100%;
+    
+}
+.nav-link{
+    display: block;
+    padding-left: 30px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #4d4e53;
+    
+}
+/* Media Query */
+@media only screen and (max-width: 815px) {
+    nav{
+        display: none;
+    }
+    #main-doc{
+        position: relative;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+  }
