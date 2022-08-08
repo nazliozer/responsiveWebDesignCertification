@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #f0f0f0;;
+}
+a{
+    text-decoration: none;
+    color:#f0f0f0; ;
+}
+h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+/* NAVBAR */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #be3144;
+    box-shadow: 0 2px 0 rgb(0, 0, 0, 0.4);
+    /* z-index: 10; */
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+
+}
+#navbar a{
+    display: block;
+    padding: 2rem;
+    font-size: 2.2rem;
+}
+#navbar a:hover {
+    background: #45567d;
+}
+/* WELCOME SECTION */
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);;
+}
+h1{
+    font-size: 6rem;
+}
+#welcome-section p{
+    font-size: 3rem;
+    font-style: italic;
+    color: #be3144;
+    font-weight: 100; /*?*/
+}
+/* PROJECTS SECTION */
+#projects{
+    background:#45567d;
+    padding: 100px 20px;
+    text-align: center;
+}
+.project-tile{
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #f0f0f0;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+@media (max-width: 30.625em) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+.project{
+    background: #303841;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    
+    margin-bottom: 6rem;
+}
+.project-img{
+    height: calc(100% - 6.8rem);
+    object-fit: cover;
+}
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+.btn-show-all{
+    font-size: 2rem;
+    background-color: #303841;
+    transition: background 0.3s ease-in;
+}
+.btn-show-all:hover{
+    background-color: #be3144;
+}
+/* CONTACT SECTION */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100% ;
+    height: 100vh;
+    background-color: #303841;
+}
+.contact-header p{
+    font-style: italic;
+}
+.contact-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+.contact-details{
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+.contact-details i{
+    color: pink;
+}
+.contact-details:hover{
+    transform: translateY(8px);
+}
+/* FOOTER */
+footer{
+    font-weight: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #303841;
+    border-top: 4px solid #be3144;
+}
+footer p{
+    margin: 2rem;
+}
+
